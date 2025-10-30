@@ -55,7 +55,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_negatiivinen_lisays_ei_muuta_saldoa(self):
         self.varasto.lisaa_varastoon(-5)
-        self.assertAlmostEqual(self.varasto.saldo, -5)
+        self.assertAlmostEqual(self.varasto.saldo, 0.0)
 
     def test_lisays_yli_kapasiteetin_tayttaa_varaston(self):
         self.varasto.lisaa_varastoon(15)
